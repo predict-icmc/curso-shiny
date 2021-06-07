@@ -9,17 +9,18 @@ knitr::opts_chunk$set(
 )
 ```
 
-Repositório principal do curso Shiny: Zero a Hero.
+Repositório principal do curso "Criação de Dashboards Interativos com o Shiny"
+Baseado no curso [Shiny: Zero a Hero](https://curso-r.github.io/latinr-shiny/)
 
 # Material
 
-- [Apresentação](https://curso-r.github.io/latinr-shiny/slides/slides_latinr_shiny_zero_to_hero.html)
-- [Script 1: Olá Mundo](https://curso-r.github.io/latinr-shiny/scripts/01-ola-mundo.R)
-- [Script 2: Output](https://curso-r.github.io/latinr-shiny/scripts/02-output.R)
-- [Script 3: Output e Input](https://curso-r.github.io/latinr-shiny/scripts/03-output-input.R)
-- [Script 4: Case](https://curso-r.github.io/latinr-shiny/scripts/04-case.R)
-- [Script 5: Case (live)](https://curso-r.github.io/latinr-shiny/scripts/05-dash.R)
-- [Exemplo em {golem}](https://github.com/curso-r/latinr-shiny/tree/master/scripts/meuGolem)
+- [Apresentação](https://predict-icmc.github.io/predict-shiny/slides/slides_latinr_shiny_zero_to_hero.html)
+- [Script 1: Olá Mundo](https://predict-icmc.github.io/predict-shiny/scripts/01-ola-mundo.R)
+- [Script 2: Output](https://predict-icmc.github.io/predict-shiny/scripts/02-output.R)
+- [Script 3: Output e Input](https://predict-icmc.github.io/predict-shiny/scripts/03-output-input.R)
+- [Script 4: Plotly](https://predict-icmc.github.io/predict-shiny/scripts/04-plotly.R)
+- [Script 5: Leaflet](https://predict-icmc.github.io/predict-shiny/scripts/05-leaflet.R)
+- [Script 5: Case: covid-19](https://predict-icmc.github.io/predict-shiny/scripts/06-covid-19.R)
   
 # Ementa
 
@@ -30,22 +31,19 @@ Repositório principal do curso Shiny: Zero a Hero.
   - Inputs e Outputs
 - **Layout**
   - Costumizando a aparência do dashboard
-  - O pacote `shinydasboard`
-  - O pacote `bs4Dash`
-- **htmlwidgets**
-  - Gráficos com `esquisse`
+  - O pacote `plot_ly`
+- **Dados geolocalizados**
   - Mapas com `leaflet`
 - **Deploy**
   - Hospedando um app no `shinyapps.io`
-  - Como colocar senha no seu dashboard com o `auth0`
 
 # Outros materiais
 
 ## Dashboards criado no evento:
 
-https://rseis.shinyapps.io/exemplo-latinR/
 
-https://rseis.shinyapps.io/latinr/
+
+
 
 ## Links citados:
 
@@ -58,26 +56,8 @@ https://rmarkdown.rstudio.com/gallery.html
 Shiny Server:
 https://rstudio.com/products/shiny/download-server/
 
-Pacote shinydashboard:
-https://rstudio.github.io/shinydashboard/get_started.html
-
-Pacote dados:
-https://cienciadedatos.github.io/dados/
-
 Pacote datos:
 https://cienciadedatos.github.io/datos/
-
-Pacote bs4Dash:
-https://rinterface.github.io/bs4Dash/
-
-Pacote golem:
-https://thinkr-open.github.io/golem/
-
-Pacote esquisse:
-https://github.com/dreamRs/esquisse
-
-Pacote auth0:
-https://github.com/curso-r/auth0
 
 Youtube da Curso-R:
 https://www.youtube.com/c/CursoR6/featured
