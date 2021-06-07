@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="" xml:lang="">
   <head>
-    <title>LatinR</title>
+    <title>Predict-ICMC</title>
     <meta charset="utf-8" />
-    <meta name="author" content="" />
+    <meta name="author" content="Apresentação baseada no curso ‘Shiny: Zero a Hero’" />
     <link href="libs/remark-css/default.css" rel="stylesheet" />
     <link href="libs/remark-css/default-fonts.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/custom-intro.css" type="text/css" />
@@ -12,10 +12,10 @@
     <textarea id="source">
 class: center, middle, inverse, title-slide
 
-# LatinR
-## Shiny: Zero to Hero
-### <img src = 'https://d33wubrfki0l68.cloudfront.net/9b0699f18268059bdd2e5c21538a29eade7cbd2b/67e5c/img/logo/cursor1-5.png' width = '30%'>
-### Outubro de 2020
+# Predict-ICMC
+## Criação de Dashboards Interativos com o Shiny
+### Apresentação baseada no curso ‘Shiny: Zero a Hero’
+### junho de 2021
 
 ---
 
@@ -29,27 +29,25 @@ class: center, middle, inverse, title-slide
 class: middle, center
 
 # Sobre
-
+&lt;img src = 'https://github.com/predict-icmc/covid19/raw/master/shiny/site_final/covid-19/www/logo-predict.jpg' width = '30%'&gt;
 ---
-class: middle, center
 
-## Sobre a Curso-R
+# O que é o PREDICT?
 
-.pull-left[
-![](https://d33wubrfki0l68.cloudfront.net/295643c6243701ae6a9bac3fb8ad467ff0ce3c84/d1785/img/logo/cursor1-41.png)&lt;!-- --&gt;
+O PREDICT-ICMC é um grupo de extensão que visa a **análise de dados** da pandemia de COVID-19 por meio de:
+--
 
-&lt;br&gt;
-&lt;br&gt;
+- técnicas de visualização de dados, e
 
-&lt;img src="img/logo_r6.png" width="1344" /&gt;
+- modelos preditivos
 
-]
 
-.pull-right[
-&lt;img src="img/produtos.png" width="477" /&gt;
-]
+para o dimensionamento e prevenção dos impactos do COVID-19 e outras síndromes respiratórias agudas graves, utilizando estatística e ciência de dados.
 
-### [www.curso-r.com](https://www.curso-r.com)
+--
+## Como o projeto surgiu?
+
+O projeto teve suas atividades iniciadas em Maio de 2020 a partir de uma iniciativa da Profa Cibele e dos alunos do curso de Estatística e Ciência de Dados em criar modelos de previsão para o covid-19.
 
 ---
 ## Sobre a apresentação
@@ -60,7 +58,7 @@ class: middle, center
 
 &lt;br&gt;
 
-- Segunra hora: apresentação de diversos recursos legais do Shiny.
+- Segunda hora: apresentação de diversos recursos legais do Shiny.
 
 &gt; **Objetivo**: sairmos pessoas motivadas a aprender mais.
 
@@ -98,7 +96,7 @@ Fonte: &lt;a href = http://www.rstudio.com/shiny/&gt;rstudio.com/shiny/&lt;/a&gt
 ---
 class: center, middle
 
-## [Exemplo de Shiny app em produção](https://rseis.shinyapps.io/exemplos/)
+## [Exemplo de Shiny app em produção](predict-icmc.shinyapps.io/covid-19/)
 
 ---
 ## Exemplo mínimo
@@ -257,6 +255,103 @@ Vamos colocar um seletor de variáveis no exemplo anterior para permitir que o u
 &lt;/center&gt;
 
 ---
+
+## Gráficos interativos com o plot_ly
+
+https://plotly.com/r/
+
+&lt;center&gt;
+&lt;img src="https://plotly-r.com/crc-cover.png" width = "300"&gt;
+&lt;br&gt;
+https://plotly-r.com/index.html
+
+---
+## Atividade
+
+Vamos criar gráficos interativos no shiny com o plotly.
+
+&lt;br&gt;
+
+&lt;center&gt;
+&lt;img src="https://media.giphy.com/media/JIX9t2j0ZTN9S/giphy.gif" width = "300" height = "300"&gt;
+&lt;br&gt;
+&lt;br&gt;
+<span style="color:#6495ed; font-weight: bold;">Ao RStudio: shinyapps/04-plotly.R</span>
+&lt;/center&gt;
+
+---
+
+## Dados geolocalizados com o leaflet
+
+&lt;center&gt;
+&lt;img src="https://rstudio.github.io/leaflet/images/shiny3.png" width = "600"&gt;
+&lt;br&gt;
+https://rstudio.github.io/leaflet/shiny.html
+
+---
+
+### Markers
+
+Use *markers* para plotar pontos em um mapa. As localizações de um *marker* são sua respectiva longitude e latitude.
+
+É necessário também criarmos uma palheta de cores se desejamos representar alguma variável (consulte https://www.datanovia.com/en/blog/top-r-color-palettes-to-know-for-great-data-visualization/)
+
+`library(RColorBrewer)`
+`display.brewer.all()`
+
+Exemplo de utilização
+  
+  `leaflet(df) %&gt;% addTiles() %&gt;% addCircles(~longitude, ~latitude)`
+  
+  `leaflet(df) %&gt;% addTiles() %&gt;% addCircleMarkers(~longitude, ~latitude)`
+  
+  fonte: https://rstudio.github.io/leaflet/markers.html
+
+
+---
+
+## Atividade
+
+Vamos criar e rodar um shiny app com um mapa do leaflet
+
+&lt;br&gt;
+
+&lt;center&gt;
+&lt;img src="https://media.giphy.com/media/JIX9t2j0ZTN9S/giphy.gif" width = "300" height = "300"&gt;
+&lt;br&gt;
+&lt;br&gt;
+<span style="color:#6495ed; font-weight: bold;">Ao RStudio: 05-leaflet.R</span>
+&lt;center&gt;
+
+---
+
+### Shapes
+
+Utilizamos uma biblioteca auxiliar, como `brazilmaps` ou `geobr`, para carregar os shapes de cada objeto espacial e adicioná-los ao nosso mapa.
+
+É necessário realizarmos uma operação de join para integrar as geometrias de cada local ao nosso conjunto de dados.
+
+  `leaflet(df) %&gt;% addTiles() %&gt;% addPolygons()`
+
+
+Fonte: https://rstudio.github.io/leaflet/shapes.html
+
+---
+
+## Atividade
+
+Vamos integrar o plotly com o leaflet
+
+&lt;br&gt;
+
+&lt;center&gt;
+&lt;img src="https://media.giphy.com/media/JIX9t2j0ZTN9S/giphy.gif" width = "300" height = "300"&gt;
+&lt;br&gt;
+&lt;br&gt;
+<span style="color:#6495ed; font-weight: bold;">Ao RStudio: 06-covid-19.R</span>
+&lt;center&gt;
+
+---
 ## Shinyapps.io
 
 O [shinyapps.io](https://www.shinyapps.io/) é um serviço do RStudio para hospedagem de Shiny apps.
@@ -267,22 +362,11 @@ Criada uma conta, você poderá subir o seu app para o shinyapps.io diretamente 
 
 [Neste vídeo](https://www.youtube.com/watch?v=jRXubw0kOrg&amp;ab_channel=Curso-R), mostramos como conectar o shinyapps.io com o RStudio.
 
----
-## Atividade
-
-Vamos conectar o nosso RStudio com o shinyapps.io e subir um app para lá.
-
-&lt;br&gt;
-
-&lt;center&gt;
-&lt;img src="https://media.giphy.com/media/JIX9t2j0ZTN9S/giphy.gif" width = "300" height = "300"&gt;
-&lt;br&gt;
-&lt;br&gt;
-<span style="color:#6495ed; font-weight: bold;">Ao RStudio: shinyapps/03-output-input.R</span>
-&lt;/center&gt;
 
 ---
 ## Referências e material extra
+
+Esta apresentação foi fortemente baseada no curso "Shiny: Zero a Hero", disponível em &lt;https://github.com/curso-r/latinr-shiny&gt;
 
 ### Tutoriais
 

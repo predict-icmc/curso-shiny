@@ -14,12 +14,13 @@ library(shinyjs)
 
 da_covid <- read_rds("da_covid.rds")
 
-
-## install.packages("geobr")
-# shape_estados <- geobr::read_state()
+#install.packages("crul")
+#install.packages("geobr")
+ shape_estados <- geobr::read_state()
 # write_rds(shape_estados, "scripts_de_aula/shape_estados.rds")
-shape_estados <- read_rds("shape_estados.rds")
-ufs <- unique(geobr::grid_state_correspondence_table$code_state)
+#shape_estados <- read_rds("shape_estados.rds")
+a <- geobr::grid_state_correspondence_table
+ ufs <- unique(as.numeric(rownames(a)))
 
 ## Para instalar o pacote {abjData}, rode
 ## remotes::install_github("abjur/abjData")
@@ -196,5 +197,5 @@ server <- function(input, output, session) {
 
 }
 
-# shiny::shinyApp(ui, server)
-auth0::shinyAppAuth0(ui, server)
+ shiny::shinyApp(ui, server)
+#auth0::shinyAppAuth0(ui, server)
