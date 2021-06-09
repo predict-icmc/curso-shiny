@@ -10,6 +10,7 @@ knitr::opts_chunk$set(
 ```
 
 Repositório principal do curso "Criação de Dashboards Interativos com o Shiny"
+
 Baseado no curso [Shiny: Zero a Hero](https://curso-r.github.io/latinr-shiny/)
 
 # Material
@@ -21,7 +22,11 @@ Baseado no curso [Shiny: Zero a Hero](https://curso-r.github.io/latinr-shiny/)
 - [Script 4: Plotly](https://predict-icmc.github.io/predict-shiny/scripts/04-plotly.R)
 - [Script 5: Leaflet](https://predict-icmc.github.io/predict-shiny/scripts/05-leaflet.R)
 - [Script 5: Case: covid-19](https://predict-icmc.github.io/predict-shiny/scripts/06-covid-19.R)
+- [Conjunto de dados `vacinados_munic.csv`](https://predict-icmc.github.io/predict-shiny/scripts/vacinados_munic.csv)
+- [Conjunto de dados `dados-covid-sp.csv`](https://predict-icmc.github.io/predict-shiny/scripts/dados-covid-sp.csv)
+
   
+
 # Ementa
 
 - **Introdução ao Shiny**
@@ -39,11 +44,7 @@ Baseado no curso [Shiny: Zero a Hero](https://curso-r.github.io/latinr-shiny/)
 
 # Outros materiais
 
-## Dashboards criado no evento:
-
-
-
-
+## Dashboard criado no evento: predict-icmc.shinyapps.io/vacina_sp/
 
 ## Links citados:
 

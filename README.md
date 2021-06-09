@@ -1,6 +1,8 @@
 
 Repositório principal do curso “Criação de Dashboards Interativos com o
-Shiny” Baseado no curso [Shiny: Zero a
+Shiny”
+
+Baseado no curso [Shiny: Zero a
 Hero](https://curso-r.github.io/latinr-shiny/)
 
 # Material
@@ -18,6 +20,10 @@ Hero](https://curso-r.github.io/latinr-shiny/)
     Leaflet](https://predict-icmc.github.io/predict-shiny/scripts/05-leaflet.R)
   - [Script 5: Case:
     covid-19](https://predict-icmc.github.io/predict-shiny/scripts/06-covid-19.R)
+  - [Conjunto de dados
+    `vacinados_munic.csv`](https://predict-icmc.github.io/predict-shiny/scripts/vacinados_munic.csv)
+  - [Conjunto de dados
+    `dados-covid-sp.csv`](https://predict-icmc.github.io/predict-shiny/scripts/dados-covid-sp.csv)
 
 # Ementa
 
@@ -36,7 +42,7 @@ Hero](https://curso-r.github.io/latinr-shiny/)
 
 # Outros materiais
 
-## Dashboards criado no evento:
+## Dashboard criado no evento: predict-icmc.shinyapps.io/vacina\_sp/
 
 ## Links citados:
 
