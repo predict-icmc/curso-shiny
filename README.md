@@ -7,23 +7,23 @@ Hero](https://curso-r.github.io/latinr-shiny/)
 
 # Material
 
-  - [Apresentação](https://predict-icmc.github.io/predict-shiny/slides/slides_latinr_shiny_zero_to_hero.html)
+  - [Apresentação](https://predict-icmc.github.io/curso-shiny/slides/slides_latinr_shiny_zero_to_hero.html)
   - [Script 1: Olá
-    Mundo](https://predict-icmc.github.io/predict-shiny/scripts/01-ola-mundo.R)
+    Mundo](https://predict-icmc.github.io/curso-shiny/scripts/01-ola-mundo.R)
   - [Script 2:
-    Output](https://predict-icmc.github.io/predict-shiny/scripts/02-output.R)
+    Output](https://predict-icmc.github.io/curso-shiny/scripts/02-output.R)
   - [Script 3: Output e
-    Input](https://predict-icmc.github.io/predict-shiny/scripts/03-output-input.R)
+    Input](https://predict-icmc.github.io/curso-shiny/scripts/03-output-input.R)
   - [Script 4:
-    Plotly](https://predict-icmc.github.io/predict-shiny/scripts/04-plotly.R)
+    Plotly](https://predict-icmc.github.io/curso-shiny/scripts/04-plotly.R)
   - [Script 5:
-    Leaflet](https://predict-icmc.github.io/predict-shiny/scripts/05-leaflet.R)
+    Leaflet](https://predict-icmc.github.io/curso-shiny/scripts/05-leaflet.R)
   - [Script 5: Case:
-    covid-19](https://predict-icmc.github.io/predict-shiny/scripts/06-covid-19.R)
+    covid-19](https://predict-icmc.github.io/curso-shiny/scripts/06-covid-19.R)
   - [Conjunto de dados
-    `vacinados_munic.csv`](https://predict-icmc.github.io/predict-shiny/scripts/vacinados_munic.csv)
+    `vacinados_munic.csv`](https://predict-icmc.github.io/curso-shiny/scripts/vacinados_munic.csv)
   - [Conjunto de dados
-    `dados-covid-sp.csv`](https://predict-icmc.github.io/predict-shiny/scripts/dados-covid-sp.csv)
+    `dados-covid-sp.csv`](https://predict-icmc.github.io/curso-shiny/scripts/dados-covid-sp.csv)
 
 # Ementa
 
@@ -42,7 +42,9 @@ Hero](https://curso-r.github.io/latinr-shiny/)
 
 # Outros materiais
 
-## Dashboard criado no evento: predict-icmc.shinyapps.io/vacina\_sp/
+## Dashboard criado no evento:
+
+<https://predict-icmc.shinyapps.io/vacina_sp/>
 
 ## Links citados:
 
