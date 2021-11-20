@@ -5,6 +5,10 @@ Shiny”
 Baseado no curso [Shiny: Zero a
 Hero](https://curso-r.github.io/latinr-shiny/)
 
+# Vídeo
+
+![](https://www.youtube.com/watch?v=25ND51icjIw)
+
 # Material
 
   - [Apresentação](https://predict-icmc.github.io/curso-shiny/slides/slides_latinr_shiny_zero_to_hero.html)
