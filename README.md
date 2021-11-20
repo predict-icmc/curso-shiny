@@ -7,7 +7,7 @@ Hero](https://curso-r.github.io/latinr-shiny/)
 
 # Vídeo
 
-![](https://www.youtube.com/watch?v=25ND51icjIw)
+  - [Gravação no Youtube](https://www.youtube.com/watch?v=25ND51icjIw)
 
 # Material
 
